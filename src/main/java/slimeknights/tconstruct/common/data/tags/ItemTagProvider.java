@@ -264,6 +264,8 @@ public class ItemTagProvider extends ItemTagsProvider {
     addArmorTags(TinkerTools.plateArmor,    DURABILITY, EMBELLISHMENT_METAL);
     addArmorTags(TinkerTools.slimesuit,     DURABILITY, EMBELLISHMENT_SLIME);
     addToolTags(TinkerTools.slimesuit.get(ArmorSlotType.HELMET), MULTIPART_TOOL);
+    // allow slimelytra to be equipped in the Curios back slot
+    this.tag(TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("curios", "back"))).add(TinkerTools.slimesuit.get(ArmorSlotType.CHESTPLATE));
 
     // shields
     addToolTags(TinkerTools.travelersShield, DURABILITY, DYEABLE, SHIELDS, INTERACTABLE_LEFT, EMBELLISHMENT_METAL);

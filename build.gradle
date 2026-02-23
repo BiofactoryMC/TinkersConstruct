@@ -307,6 +307,7 @@ processResources {
 }
 
 jar {
+    archiveFileName = "TConstruct-${minecraft_version}-DEV.jar"
     manifest {
         attributes([
                 "Specification-Title"     : "Tinkers Construct",
